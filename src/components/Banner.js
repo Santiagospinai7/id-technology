@@ -1,7 +1,7 @@
 import React from "react";
 import banner from "../img/Banner.png";
 
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Banner = () => {
   return (
@@ -24,21 +24,58 @@ const Banner = () => {
   );
 }
 
-//Styled Components
 const About = styled.div`
-  min-height: 90vh;
+  width: 100%;
+  min-height: 85vh;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1rem 7rem;
-  color: black;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  .image{
-    flex: 1;
-    padding-right: 5rem;
+  .text {
+    max-width: 100%;
+    min-width: 100%;
+    line-height: 1.25;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .image {
+    flex-basis: 25%;
+    margin-right: 5rem;
 
     img {
+      height: 100%;
       width: 25rem;
+      aspect-ratio: 0.99 / 1;
+    }
+  }
+
+  .description {
+    flex-basis: 50%;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+    .description {
+      text-align: center;
+      padding: 1rem;
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .image {
+      /* center image */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0 !important;
     }
   }
 `;

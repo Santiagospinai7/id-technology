@@ -1,12 +1,13 @@
 import GlobalStyle from "./components/GlobalStyle";
 
 import Home from "./pages/Home";
+import Nav from "../src/components/Nav";
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <h1>NAV</h1>
+      <Nav />
       <Home />
     </div>
   );

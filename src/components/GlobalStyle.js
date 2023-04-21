@@ -35,18 +35,20 @@ button{
     background: ${color.green_medium};
     color: ${color.white};
     transition: all 0.5s ease;
-    border-radius: 20px;
+    border-radius: 50px;
     border: 3px solid transparent;
+    box-shadow: 0px 0px 5px ${color.green_medium};
 
     &:hover {
       background-color: ${color.green_dark};
+      box-shadow: 0px 0px 1px ${color.green_darkness};
       color: ${color.white};
     }
 }
 
 h2 {
   font-weight: ${color.black};
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -66,6 +68,11 @@ p {
     color: ${color.green_medium};
   }
 }
+
+/* @media (max-width: 768px) {
+
+} */
+
 `
 
 export default GlobalStyle;
