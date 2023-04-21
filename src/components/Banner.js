@@ -60,6 +60,8 @@ const About = styled.div`
     display: block;
     align-items: center;
     justify-content: center;
+    padding: 0rem  5rem;
+    
 
     .description {
       text-align: center;
@@ -76,7 +78,15 @@ const About = styled.div`
       justify-content: center;
       align-items: center;
       margin-right: 0 !important;
+
+      img {
+        width: 50%;
+      }
     }
+  }
+
+  @media (max-width: 400px) {
+    padding: 0rem 1.5rem;
   }
 `;
 

@@ -1,18 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
-// import { Color } from './classes/Color';
+import { Color } from './classes/Color';
 
-// const black = new Color('#000000');
-// const green-lighter = new Color('#80D5A3');
-
-const color = {
-  white: '#ffffff',
-  black: '#000000',
-  green_lighter: '#80D5A3',
-  green_light: '#3DCC79',
-  green_medium: '#2E995B',
-  green_dark: '#174D2D',
-  green_darkness: '#2E4D3B',
-}
+// Create colors
+new Color({name: 'black', code: '#000000'});
+new Color({name: 'white', code: '#ffffff'});
+new Color({name: 'green_lighter', code: '#80D5A3'});
+new Color({name: 'green_light', code: '#3DCC79'});
+new Color({name: 'green_medium', code: '#2E995B'});
+new Color({name: 'green_dark', code: '#174D2D'});
+new Color({name: 'green_darkness', code: '#2E4D3B'});
 
 const GlobalStyle = createGlobalStyle`
 
@@ -20,39 +16,39 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: effra, sans-serif;
+    font-family: "effra", sans-serif;
 }
 
 body{
-    background: ${color.white};
+    background: ${Color.getColor('white')};
 }
 
 button{
-    font-weight: bold;
+    font-weight: medium;
     font-size: 1.1rem;
     cursor: pointer;
     padding: 0.5rem 1rem;
-    background: ${color.green_medium};
-    color: ${color.white};
+    background: ${Color.getColor('green_medium')};
+    color: ${Color.getColor('white')};
     transition: all 0.5s ease;
     border-radius: 50px;
     border: 3px solid transparent;
-    box-shadow: 0px 0px 5px ${color.green_medium};
+    box-shadow: 0px 0px 2px ${Color.getColor('green_medium')};
 
     &:hover {
-      background-color: ${color.green_dark};
-      box-shadow: 0px 0px 1px ${color.green_darkness};
-      color: ${color.white};
+      background-color: ${Color.getColor('green_dark')};
+      box-shadow: 0px 0px 1px ${Color.getColor('green_darkness')};
+      color: ${Color.getColor('white')};
     }
 }
 
 h2 {
-  font-weight: ${color.black};
+  font-weight: ${Color.getColor('black')};
   font-size: 2.5rem;
 }
 
 h3 {
-  color: ${color.black};
+  color: ${Color.getColor('black')};
 }
 
 h4 {
@@ -61,17 +57,54 @@ h4 {
 
 p {
   padding: 2rem 0rem;
-  color: ${color.black};
+  color: ${Color.getColor('black')};
   font-size: 1.1rem;
 
   strong {
-    color: ${color.green_medium};
+    color: ${Color.getColor('green_medium')};
   }
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
 
-} */
+  p {
+    padding: 1rem 0rem;
+    color: ${Color.getColor('black')};
+    font-size: 1rem;
+
+    strong {
+      color: ${Color.getColor('green_medium')};
+    }
+  }
+
+  button {
+    font-weight: medium;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background: ${Color.getColor('green_medium')};
+    color: ${Color.getColor('white')};
+    transition: all 0.5s ease;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    box-shadow: 0px 0px 2px ${Color.getColor('green_medium')};
+
+      &:hover {
+        background-color: ${Color.getColor('green_dark')};
+        box-shadow: 0px 0px 1px ${Color.getColor('green_darkness')};
+        color: ${Color.getColor('white')};
+      }
+  }
+
+  @media (max-width: 400px) {
+    h2 {
+      font-size: 1.75rem;
+    }
+  }
+}
 
 `
 
