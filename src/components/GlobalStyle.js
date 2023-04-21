@@ -87,16 +87,17 @@ p {
     padding: 0.5rem 1rem;
     background: ${Color.getColor('green_medium')};
     color: ${Color.getColor('white')};
-    transition: all 0.5s ease;
+    /* transition: all 0.5s ease; */
     border-radius: 50px;
     border: 3px solid transparent;
     box-shadow: 0px 0px 2px ${Color.getColor('green_medium')};
 
-      &:hover {
-        background-color: ${Color.getColor('green_dark')};
-        box-shadow: 0px 0px 1px ${Color.getColor('green_darkness')};
-        color: ${Color.getColor('white')};
-      }
+
+    &:hover {
+      background-color: ${Color.getColor('green_dark')};
+      box-shadow: 0px 0px 1px ${Color.getColor('green_darkness')};
+      color: ${Color.getColor('white')};
+    }
   }
 
   @media (max-width: 400px) {

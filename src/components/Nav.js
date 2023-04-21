@@ -58,6 +58,7 @@ const StyledNav = styled.nav`
     transition: all 0.5s ease;
 
     a {
+      --s: 0em;
       color: ${Color.getColor('white')};
 
       &:hover {
@@ -75,12 +76,22 @@ const StyledNav = styled.nav`
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    color: ${Color.getColor('green_dark')};
     text-decoration: none;
-    transition: all 0.5s ease;
+
+    --s: 0.1em;   /* the thickness of the line */
+    --c: ${Color.getColor('green_light')}; /* the color */
+    
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,${Color.getColor('green_dark')} 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.25s;
 
     &:hover {
-      color: ${Color.getColor('green_medium')};
+      --_p: 100%;
     }
   }
 

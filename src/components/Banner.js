@@ -26,7 +26,7 @@ const Banner = () => {
 
 const About = styled.div`
   width: 100%;
-  min-height: 85vh;
+  min-height: 70vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
