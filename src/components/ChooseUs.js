@@ -12,31 +12,43 @@ const ChooseUs = () => {
     <StyledChooseUs>
       <div className="choose-us">
         <h3 className="title">¿Por qué escogernos como tu aliado tecnológico?</h3>
-          <div className="choose-us__item">
-            <div className="choose-us__item__icon">
+
+        <div className="choose-cards">
+          <div className="choose-card">
+            <div className="content">
               <img src={escogernos_1} alt="escorgernos_1_img" />
               <p>
-                <strong>Experiencia</strong> en el mercado de TI
+                <strong>Trabajamos juntos a partir de oportunidades de mejora identificadas</strong>
+                <br /><br />
+                Todos nuestros clientes disfrutan de un diagnostico inicial gratuito, que les ayudará a identificar oportunidades de mejora en su infraestructura tecnológica, lo que se traduce en optimización de recursos y rendmiento empresarial.
               </p>
-            </div>
-            <div className="choose-us__item__icon">
-              <img src={escogernos_2} alt="escorgernos_1_img" />
-              <p>
-                <strong>Capacitación</strong> constante de nuestros colaboradores
-              </p>
+              <button>AGENDA TU DIAGNOSTICO GRATUITO</button>
             </div>
           </div>
+          <div className="choose-card">
+            <div className="content">
+              <img src={escogernos_2} alt="escorgernos_1_img" />
+              <p>
+                <strong>Nuestro propósito es convertirnos en tu aliado estratégico</strong>
+                <br /><br />
+                Nos consideramos aliados estrategicos de nuestros clientes, ya que prestamos un servicio holistico y completo que se adapta a sus necesidades especificas, lo que se traduce en lealtad y alta calidad de productos y servicios ofrecidos.
+              </p>
+              <button>CONOCE NUESTROS SERVICIOS</button>
+            </div>
+          </div>
+        </div>
       </div>
     </StyledChooseUs>
   )
 };
 
 const StyledChooseUs = styled.div`
-  min-height: 50vh;
+  padding: 2.5rem 0rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* background-color: blue; */
   background: ${Color.getColor('white')};
 
   .choose-us {
@@ -46,26 +58,48 @@ const StyledChooseUs = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 0 2rem;
+    /* background-color: red; */
+
+    h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
   }
 
-  .choose-us__item {
+  .choose-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    gap: 7.5%;
+  }
+
+  .choose-card {
+    flex-basis: 40%;
+    height: 100%;
+    min-width: 400px;
+    max-width: 550px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 1rem 0;
-  }
+    /* background-color: green; */
+    margin: 1rem 0rem;
 
-  .choose-us__item__icon {
-    flex-basis: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 1rem 0;
+    img {
+      width: 7.5rem;
+      height: 7.5rem;
+    }
+
+    strong {
+      color: ${Color.getColor('black')};
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
   }
 `
 
