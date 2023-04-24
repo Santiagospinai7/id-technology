@@ -9,9 +9,11 @@ new Color({name: 'green_light', code: '#3DCC79'});
 new Color({name: 'green_medium', code: '#2E995B'});
 new Color({name: 'green_dark', code: '#174D2D'});
 new Color({name: 'green_darkness', code: '#2E4D3B'});
+new Color({name: 'grey_light', code: '#F5F5F5'});
+
+const isLight = true;
 
 const GlobalStyle = createGlobalStyle`
-
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body{
-    background: ${Color.getColor('white')};
+    background: ${(isLight) ? Color.getColor('white') : Color.getColor('black')};
 }
 
 button{
@@ -43,12 +45,12 @@ button{
 }
 
 h2 {
-  font-weight: ${Color.getColor('black')};
+  font-weight: ${(isLight) ? Color.getColor('black') : Color.getColor('white')};
   font-size: 2.5rem;
 }
 
 h3 {
-  color: ${Color.getColor('black')};
+  color: ${(isLight) ? Color.getColor('black') : Color.getColor('white')};
 }
 
 h4 {
@@ -57,7 +59,7 @@ h4 {
 
 p {
   padding: 2rem 0rem;
-  color: ${Color.getColor('black')};
+  color: ${(isLight) ? Color.getColor('black') : Color.getColor('white')};
   font-size: 1.1rem;
 
   strong {
@@ -72,7 +74,7 @@ p {
 
   p {
     padding: 1rem 0rem;
-    color: ${Color.getColor('black')};
+    color: ${(isLight) ? Color.getColor('black') : Color.getColor('white')};
     font-size: 1rem;
 
     strong {

@@ -5,7 +5,6 @@ import { Color } from "./classes/Color";
 import logoIdt from "../img/Logo_menu.png";
 
 const Nav = () => {
-  // console.log("colors", Color.colors);
   return (
     <StyledNav>
       <div className="logo">
