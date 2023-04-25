@@ -49,7 +49,7 @@ const Services = () => {
               <a href="#">Leer más</a>
             </div>
           </div>
-          
+
         </div>
       </div>
     </ServicesStyled>
@@ -57,16 +57,63 @@ const Services = () => {
 }
 
 const ServicesStyled = styled.div`
-  height: 80vh;
   width: 100%;
   background: ${Color.getColor('grey_light')};
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  .services {
+    width: 100%;
+    padding: 50px 0px;
+  }
 
   .container {
     width: 85%;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
+  }
+
+  .service-card {
+    background: ${Color.getColor('white')};
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+
+    a {
+      visibility: hidden;
+    }
+
+    &:hover {
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+      background-color: ${Color.getColor('green_medium')};
+      cursor: pointer;
+
+      h3 {
+        color: ${Color.getColor('white')};
+      }
+
+      p {
+        color: ${Color.getColor('white')};
+      }
+
+      a {
+        color: ${Color.getColor('white')};
+        visibility: visible;
+      }
+    }
+  }
+
+  .content {
+    padding: 2rem 0;
+
+    img {
+      width: 50%;
+      height: 50%;
+    }
   }
 `
 

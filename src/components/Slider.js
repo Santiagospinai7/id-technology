@@ -37,7 +37,7 @@ const SliderBar = styled.div`
   .logos {
     background: ${Color.getColor('grey_light')};
     overflow: hidden;
-    padding: 1rem 0rem;
+    padding: 2rem 0rem;
     white-space: nowrap;
     position: relative;
   }
