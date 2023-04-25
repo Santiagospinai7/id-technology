@@ -10,12 +10,15 @@ import eset from "../img/Partner_Eset.png";
 const ChooseUs = () => {
   return (
     <StyledChooseUs>
+
       <div className="choose-us">
         <h3 className="title">¿Por qué escogernos como tu aliado tecnológico?</h3>
 
         <div className="choose-cards">
+
           <div className="choose-card">
             <div className="content">
+
               <img src={escogernos_1} alt="escorgernos_1_img" />
               <p>
                 <strong>Trabajamos juntos a partir de oportunidades de mejora identificadas</strong>
@@ -23,10 +26,13 @@ const ChooseUs = () => {
                 Todos nuestros clientes disfrutan de un diagnostico inicial gratuito, que les ayudará a identificar oportunidades de mejora en su infraestructura tecnológica, lo que se traduce en optimización de recursos y rendmiento empresarial.
               </p>
               <button>AGENDA TU DIAGNOSTICO GRATUITO</button>
+
             </div>
           </div>
+
           <div className="choose-card">
             <div className="content">
+
               <img src={escogernos_2} alt="escorgernos_1_img" />
               <p>
                 <strong>Nuestro propósito es convertirnos en tu aliado estratégico</strong>
@@ -34,21 +40,48 @@ const ChooseUs = () => {
                 Nos consideramos aliados estrategicos de nuestros clientes, ya que prestamos un servicio holistico y completo que se adapta a sus necesidades especificas, lo que se traduce en lealtad y alta calidad de productos y servicios ofrecidos.
               </p>
               <button>CONOCE NUESTROS SERVICIOS</button>
+
             </div>
           </div>
         </div>
       </div>
+
+      <div className="choose-us">
+        <h3 className="title">Somos partner de los grandes líderes en el sector tecnológico</h3>
+        <p>Lo que nos permite ofrecer soluciones y de alta calidad a precios competitivos</p>
+
+        <div className="partner-cards">
+
+          <div className="partner-card">
+            <div className="content">
+              <img src={microsoft} alt="escorgernos_1_img" />
+              <p><strong>Partner certificado de Microsoft</strong></p>
+            </div>
+          </div>
+
+          <div className="partner-card">
+            <div className="content">
+              <img src={eset} alt="escorgernos_1_img" />
+              <p><strong>Partner certificado de ESET</strong></p>
+            </div>
+          </div>
+
+          <div className="partner-card">
+            <div className="content">
+              <img src={anyDesk} alt="escorgernos_1_img" />
+              <p><strong>Partner certificado de AnyDesk</strong></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </StyledChooseUs>
   )
 };
 
 const StyledChooseUs = styled.div`
-  padding: 2.5rem 0rem;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: blue; */
   background: ${Color.getColor('white')};
 
   .choose-us {
@@ -59,10 +92,15 @@ const StyledChooseUs = styled.div`
     justify-content: center;
     align-items: center;
     /* background-color: red; */
+    margin: 5rem 0rem;
 
     h3 {
       text-align: center;
       margin-bottom: 1rem;
+    }
+
+    p {
+      text-align: center;
     }
   }
 
@@ -87,6 +125,40 @@ const StyledChooseUs = styled.div`
     img {
       width: 7.5rem;
       height: 7.5rem;
+    }
+
+    strong {
+      color: ${Color.getColor('black')};
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .partner-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+  }
+
+  .partner-card {
+    flex-basis: 20%;
+    height: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    width: 100%;
+    margin: 1rem 0rem;
+
+    img {
+      width: 30%;
+      height: 30%;
     }
 
     strong {
