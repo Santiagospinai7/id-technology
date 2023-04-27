@@ -56,14 +56,14 @@ const TestimonialCarousel = () => {
       <div className="carousel-container">
         <div className="carousel-slide" ref={scrollRef}>
           {testimonials.map((testimonial, index) => {
-            if (index % 2 === 0) {
+            // if (index % 2 === 0) {
               return (
                 <div className="testimonial-section" key={testimonial.id}>
                   <div className="testimonial">
                     <div className="testimonial-text">{testimonial.text}</div>
                     <div className="testimonial-name">{testimonial.name}</div>
                   </div>
-                  {testimonials[index + 1] && (
+                  {/* {testimonials[index + 1] && (
                     <div className="testimonial">
                       <div className="testimonial-text">
                         {testimonials[index + 1].text}
@@ -72,11 +72,9 @@ const TestimonialCarousel = () => {
                         {testimonials[index + 1].name}
                       </div>
                     </div>
-                  )}
+                  )} */}
                 </div>
               );
-            }
-            return null;
           })}
         </div>
         <button className="carousel-prev" onClick={handlePrevClick}>
@@ -91,11 +89,19 @@ const TestimonialCarousel = () => {
 };
 
 const CarouselStyled = styled.div`
+  h3 {
+    text-align: center;
+    margin: 4rem 0rem 0rem 0rem;
+  }
+
   .carousel-container {
+    padding: 3rem 10rem 4rem 10rem;
     position: relative;
+    background-color: red;
   }
 
   .carousel-slide {
+    background-color: blue;
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -104,7 +110,9 @@ const CarouselStyled = styled.div`
   }
 
   .testimonial-section {
+    background-color: aquamarine;
     display: flex;
+    margin: 0rem 5rem;
     scroll-snap-align: start;
     width: 100%;
 
