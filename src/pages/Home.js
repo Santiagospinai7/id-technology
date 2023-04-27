@@ -3,7 +3,8 @@ import Banner from "../components/Banner";
 import Slider from "../components/Slider";
 import ChooseUs from "../components/ChooseUs";
 import Services from "../components/Services";
-import TestimonialCarousel from "../components/TestimonialCarousel";
+// import TestimonialCarousel from "../components/TestimonialCarousel";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
@@ -12,7 +13,8 @@ const Home = () => {
       <Slider />
       <ChooseUs />
       <Services />
-      <TestimonialCarousel />
+      <h1>Testimonials</h1>
+      <Testimonials />
     </div>
   )
 };

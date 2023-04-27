@@ -56,14 +56,14 @@ const TestimonialCarousel = () => {
       <div className="carousel-container">
         <div className="carousel-slide" ref={scrollRef}>
           {testimonials.map((testimonial, index) => {
-            // if (index % 2 === 0) {
+            if (index % 2 === 0) {
               return (
                 <div className="testimonial-section" key={testimonial.id}>
                   <div className="testimonial">
                     <div className="testimonial-text">{testimonial.text}</div>
                     <div className="testimonial-name">{testimonial.name}</div>
                   </div>
-                  {/* {testimonials[index + 1] && (
+                  {testimonials[index + 1] && (
                     <div className="testimonial">
                       <div className="testimonial-text">
                         {testimonials[index + 1].text}
@@ -72,9 +72,11 @@ const TestimonialCarousel = () => {
                         {testimonials[index + 1].name}
                       </div>
                     </div>
-                  )} */}
+                  )}
                 </div>
               );
+            }
+            return null;
           })}
         </div>
         <button className="carousel-prev" onClick={handlePrevClick}>
@@ -115,10 +117,17 @@ const CarouselStyled = styled.div`
     margin: 0rem 5rem;
     scroll-snap-align: start;
     width: 100%;
+    overflow: hidden;
 
     .testimonial {
+      background-color: violet;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       width: 50%;
       padding: 0 20px;
+      flex-direction: column;
+      height: 25vh;
     }
 
     .testimonial-text {
