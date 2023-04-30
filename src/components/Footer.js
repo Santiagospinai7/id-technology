@@ -1,5 +1,8 @@
 import React from "react";
+import { Color } from "./classes/Color";
 import styled from "styled-components";
+import footerImg from "../img/Footer.png";
+import footerLogo from "../img/Logo_footer.png";
 
 const Footer = () => {
   return (
@@ -8,30 +11,21 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="footer-col">
-              <h4>Compañía</h4>
+              
+              <h4><img src={footerLogo} alt="logo_id" /></h4>
               <ul>
-                <li><a href="#">Acerca de nosotros</a></li>
-                <li><a href="#">Nuestros servicios</a></li>
-                <li><a href="#">Política de privacidad</a></li>
-                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="/">Acerca de nosotros</a></li>
+                <li><a href="/">Nuestros servicios</a></li>
+                <li><a href="/">Política de privacidad</a></li>
+                <li><a href="/">Términos y condiciones</a></li>
               </ul>
             </div>
             <div className="footer-col">
-              <h4>Obtén ayuda</h4>
-              <ul>
-                <li><a href="#">Opciones de contacto</a></li>
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="#">Asistencia</a></li>
-                <li><a href="#">Equipo de soporte</a></li>
-              </ul>
-            </div>
-            <div className="footer-col">
-              <h4>Síguenos</h4>
               <div className="social-links">
-                <a href="#"><i className="fab fa-facebook-f"></i></a>
-                <a href="#"><i className="fab fa-twitter"></i></a>
-                <a href="#"><i className="fab fa-instagram"></i></a>
-                <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                {/* <a href="/"><i className="fab fa-instagram"></i></a>
+                <a href="/"><i className="fab fa-linkedin-in"></i></a> */}
+                <a href="/"><img src="" alt="instagram_icon" /></a>
+                <a href="/"><img src="" alt="linkedin_icon" /></a>
               </div>
             </div>
           </div>
@@ -42,10 +36,15 @@ const Footer = () => {
 }
 
 const FooterStyled = styled.div`
-  width: 100%;
-  background: #1a1a1a;
-  color: #fff;
-  padding: 60px 0;
+  background-image: url(${footerImg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+
+  .footer {
+    background-image: url(${footerImg});
+  }
 
   .container {
     max-width: 1170px;
@@ -61,7 +60,7 @@ const FooterStyled = styled.div`
 
   .footer-col h4 {
     font-size: 18px;
-    color: #ffffff;
+    color: ${Color.getColor('green_medium')};
     text-transform: capitalize;
     margin-bottom: 35px;
     font-weight: 500;
@@ -73,7 +72,7 @@ const FooterStyled = styled.div`
     position: absolute;
     left: 0;
     bottom: -10px;
-    background: #e91e63;
+    background: ${Color.getColor('green_medium')};
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -86,16 +85,16 @@ const FooterStyled = styled.div`
   .footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: ${Color.getColor('black')};
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
+    color: ${Color.getColor('black')};
     display: block;
     transition: all 0.3s ease;
   }
 
   .footer-col ul li a:hover {
-    color: #ffffff;
+    color: ${Color.getColor('black')};
     padding-left: 8px;
   }
 
@@ -108,7 +107,7 @@ const FooterStyled = styled.div`
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: ${Color.getColor('black')};
     transition: all 0.5s ease;
   }
 

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Color } from "./classes/Color";
 
 import logoIdt from "../img/Logo_menu.png";
+import whatsappIcon from "../img/Whatsapp.png";
 
 const Nav = () => {
   return (
@@ -28,6 +29,7 @@ const Nav = () => {
           </li>
         </ul>
       </div>
+      <img id="wpp" src={whatsappIcon} alt="wpp_icon" />
     </StyledNav>
   )
 };
@@ -41,6 +43,13 @@ const StyledNav = styled.nav`
   align-items: center;
   padding: 1.25rem 5rem;
   flex-wrap: wrap;
+
+  #wpp {
+    position: fixed;
+    right: 10px;
+    bottom: 100px;
+    z-index: 9999;
+  }
 
   .logo {
     flex-basis: 20%;
