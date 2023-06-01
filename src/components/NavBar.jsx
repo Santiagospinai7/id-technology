@@ -9,8 +9,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 my-2">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 my-2 w-full">
+      <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center">
           <img src={logo} className="h-8 mr-3" alt="IDT Logo" />
         </a>

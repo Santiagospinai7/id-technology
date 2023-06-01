@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './App.css'
 import NavBar from './components/NavBar'
+import Banner from './components/home/Banner'
 
 function App() {
   let content
@@ -18,9 +19,10 @@ function App() {
 
   if (isSuccess) {
     content = (
-      <>
+      <div className='max-w-screen-xl flex flex-col justify-center items-center mx-auto'>
         <NavBar />
-      </>
+        <Banner />
+      </div>
     )
   }
 
