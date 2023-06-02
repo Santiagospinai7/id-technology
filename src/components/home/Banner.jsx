@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     // I need to add a space between the two classes inside the first div, also in the right container add a space line between title, description and button and in the strong tag inside the description the text has to be green 100
     <>
-      <div className='flex flex-col md:flex-row'>
+      <div className='flex flex-col md:flex-row my-20'>
         <div className='w-full md:w-1/2'>
           <img src={BannerImg} alt='banner' className='w-full h-full object-cover' />
         </div>

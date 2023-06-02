@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import NavBar from './components/NavBar'
 import Banner from './components/home/Banner'
+import Slider from './components/home/Slider'
 
 function App() {
   let content
@@ -19,9 +20,13 @@ function App() {
 
   if (isSuccess) {
     content = (
-      <div className='max-w-screen-xl flex flex-col justify-center items-center mx-auto'>
-        <NavBar />
-        <Banner />
+      // in base of the code below I need to create a first  div that set a margin left-right 10% width screen and then inside another dive that center al the things inside but in base of the limitation of the parent div
+      <div className="min-w-[415px] max-w-screen-xl mx-auto">
+        <div className='max-w-screen-xl mx-auto'>
+          <NavBar />
+          <Banner />
+          <Slider />
+        </div>
       </div>
     )
   }

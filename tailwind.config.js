@@ -50,7 +50,7 @@ export default {
         green: colors.green,
       },
       screens: {
-        'md': '950px',
+        'md': '900px',
       },
     },
   },

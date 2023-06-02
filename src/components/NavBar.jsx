@@ -12,7 +12,16 @@ const NavBar = () => {
     <nav className="bg-white border-gray-200 dark:bg-gray-900 my-2 w-full">
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center">
-          <img src={logo} className="h-8 mr-3" alt="IDT Logo" />
+          <img
+            src={logo}
+            className="w-[70%] h-[100%]  md:max-w-[100%] md:h-[100%] mr-3"
+            alt="IDT Logo"
+            // style={{
+            //   height: '1rem', // Specify the desired height of the image
+            //   maxWidth: '75%', // Set a maximum width relative to the container
+            //   maxHeight: '100%', // Set a maximum height relative to the container
+            // }}
+          />
         </a>
         <button
           data-collapse-toggle="navbar-default"
