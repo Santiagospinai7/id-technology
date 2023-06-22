@@ -21,10 +21,12 @@ function App() {
   if (isSuccess) {
     content = (
       // in base of the code below I need to create a first  div that set a margin left-right 10% width screen and then inside another dive that center al the things inside but in base of the limitation of the parent div
-      <div className="min-w-[415px] max-w-screen-xl mx-auto">
-        <div className='max-w-screen-xl mx-auto'>
+      <div className="min-w-[415px] mx-auto">
+        <div className="max-w-screen-xl mx-auto">
           <NavBar />
           <Banner />
+        </div>
+        <div className="w-full"> {/* Set the Slider container to full width */}
           <Slider />
         </div>
       </div>
