@@ -19,7 +19,7 @@ const ChooseUs = () => {
           </div>
         </div>
         <div className="bg-red-100 md:col-span-4">
-          <div className='bg-red-200'>
+          <div className='h-full bg-red-200'>
             box-3
           </div>
         </div>
