@@ -11,16 +11,39 @@ const ChooseUs = () => {
       
       <div className="grid ms:grid-cols-1 md:grid-flow-col gap-5">
         <div className="bg-blue-100 grid gap-5 ms:grid-cols-1 md:col-span-6">
-          <div className='bg-blue-200'>
-            box-1
+          <div className='bg-blue-200 grid grid-flow-col'>
+            <div className='bg-blue-300 col-span-3'>
+              image
+            </div>
+            <div className='bg-blue-400 col-span-7'>
+              box-1b
+            </div>
           </div>
-          <div className='bg-blue-200'>
-            box-2
+          <div className='bg-blue-200 grid grid-flow-col'>
+            <div className='bg-blue-300 col-span-7'>
+              box-2a
+            </div>
+            <div className='bg-blue-400 col-span-3'>
+              image
+            </div>
           </div>
         </div>
         <div className="bg-red-100 md:col-span-4">
-          <div className='h-full bg-red-200'>
-            box-3
+          {/* <div className='h-full bg-red-200 grid grid-rows-2' style={{ gridTemplateRows: "30% 70%" }}>
+            <div className='bg-red-300'>
+              image
+            </div>
+            <div className='bg-red-400'>
+              box-3b
+            </div>
+          </div> */}
+          <div className='h-full bg-blue-200 grid grid-flow-col md:grid-rows-2'>
+            <div className='bg-blue-300 col-span-3'>
+              box-3a
+            </div>
+            <div className='bg-blue-400 col-span-7'>
+              image
+            </div>
           </div>
         </div>
       </div>
@@ -33,14 +56,9 @@ const ChooseUs = () => {
 
 
 const StyledChooseUs = styled.div`
-`
-
-const ChooseUsGrid = styled.div`
-  .child-grid {
-      display: grid;
-      grid-template-columns: 70% 30%;
-      gap: 1rem;
-    }
+  .box-3a {
+    grid-template-rows: 30% 70%;
+  }
 `
 
 export default ChooseUs
