@@ -3,6 +3,7 @@ import './App.css'
 import NavBar from './components/NavBar'
 import Banner from './components/home/Banner'
 import Slider from './components/home/Slider'
+import ChooseUs from './components/home/ChooseUs'
 
 function App() {
   let content
@@ -26,8 +27,11 @@ function App() {
           <NavBar />
           <Banner />
         </div>
-        <div className="w-full"> {/* Set the Slider container to full width */}
+        <div className="w-full"> 
           <Slider />
+        </div>
+        <div className="max-w-screen-xl mx-auto">
+          <ChooseUs />
         </div>
       </div>
     )
