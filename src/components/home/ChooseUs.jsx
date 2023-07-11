@@ -9,27 +9,21 @@ const ChooseUs = () => {
       </h2>
       <p className='mb-10'>Aqui te damos 3 razones que <strong>nos hace especiales</strong> como aliados en tecnología</p>
       
-      <ChooseUsGrid className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="grid gap-4">
-              <div>
-                  <div className="h-50 bg-blue-500 max-w-full rounded-lg">
-                    hi
-                  </div>
-              </div>
-              <div>
-                  <div className="h-50 bg-red-500 max-w-full rounded-lg">
-                    hi
-                  </div>
-              </div>
+      <div className="grid ms:grid-cols-1 md:grid-flow-col gap-5">
+        <div className="bg-blue-100 grid gap-5 ms:grid-cols-1 md:col-span-6">
+          <div className='bg-blue-200'>
+            box-1
           </div>
-          <div className="grid gap-4">
-              <div>
-                  <div className="h-50 bg-green-500 max-w-full rounded-lg">
-                    hi
-                  </div>
-              </div>
+          <div className='bg-blue-200'>
+            box-2
           </div>
-      </ChooseUsGrid>
+        </div>
+        <div className="bg-red-100 md:col-span-4">
+          <div className='bg-red-200'>
+            box-3
+          </div>
+        </div>
+      </div>
 
     </StyledChooseUs>
   )
@@ -42,6 +36,11 @@ const StyledChooseUs = styled.div`
 `
 
 const ChooseUsGrid = styled.div`
+  .child-grid {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      gap: 1rem;
+    }
 `
 
 export default ChooseUs
