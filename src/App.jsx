@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import Banner from './components/home/Banner'
 import Slider from './components/home/Slider'
 import ChooseUs from './components/home/ChooseUs'
+import Services from './components/home/Services'
 
 function App() {
   let content
@@ -32,6 +33,7 @@ function App() {
         </div>
         <div className="max-w-screen-xl mx-auto">
           <ChooseUs />
+          <Services />
         </div>
       </div>
     )
