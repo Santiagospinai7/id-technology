@@ -33,7 +33,11 @@ function App() {
         </div>
         <div className="max-w-screen-xl mx-auto">
           <ChooseUs />
-          <Services />
+        </div>
+        <div className="w-full bg-gray-100"> 
+          <div className="max-w-screen-xl mx-auto">
+            <Services />
+          </div>
         </div>
       </div>
     )
