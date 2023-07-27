@@ -1,26 +1,24 @@
 import { useState } from 'react';
 
 const Reviews = () => {
-  const items = [
-    'Item 1',
-    'Item 2',
-    'Item 3',
-    'Item 4',
-    'Item 5',
-    'Item 6',
-    'Item 7',
-    'Item 8',
-  ];
+  const feedbacks = {
+    customer1: 'Lorem ipsum dolor sit consectetur.',
+    customer2: 'Lorem ipsum dolor sit consectetur.',
+    customer3: 'Lorem ipsum dolor sit consectetur.',
+    customer4: 'Lorem ipsum dolor sit consectetur.',
+    customer5: 'Lorem ipsum dolor sit consectetur.',
+    customer6: 'Lorem ipsum dolor sit consectetur.',
+  }
 
   const [currentPage, setCurrentPage] = useState(0);
 
   const handleNext = () => {
-    setCurrentPage((prevPage) => (prevPage + 1) % Math.ceil(items.length / 2));
+    setCurrentPage((prevPage) => (prevPage + 1) % Math.ceil(Object.keys(feedbacks).length / 2));
   };
 
   const handlePrev = () => {
     setCurrentPage(
-      (prevPage) => (prevPage - 1 + Math.ceil(items.length / 2)) % Math.ceil(items.length / 2)
+      (prevPage) => (prevPage - 1 + Math.ceil(Object.keys(feedbacks).length / 2)) % Math.ceil(Object.keys(feedbacks).length / 2)
     );
   };
 
@@ -28,9 +26,10 @@ const Reviews = () => {
     <div className="flex">
       <button onClick={handlePrev}>Previous</button>
       <div className="flex flex-wrap">
-        {items.slice(currentPage * 2, currentPage * 2 + 2).map((item, index) => (
+        {Object.entries(feedbacks).slice(currentPage * 2, currentPage * 2 + 2).map(([key, value], index) => (
           <div key={index} className="w-1/2 p-4">
-            <p className="bg-blue-200 p-4">{item}</p>
+            <p className="bg-blue-200 p-4">{value}</p>
+            <p className="bg-green-200 p-4">{key}</p>
           </div>
         ))}
       </div>
