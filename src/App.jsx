@@ -5,6 +5,7 @@ import Banner from './components/home/Banner'
 import Slider from './components/home/Slider'
 import ChooseUs from './components/home/ChooseUs'
 import Services from './components/home/Services'
+import Reviews from './components/home/Reviews.jsx'
 
 function App() {
   let content
@@ -38,6 +39,9 @@ function App() {
           <div className="max-w-screen-xl mx-auto">
             <Services />
           </div>
+        </div>
+        <div className="max-w-screen-xl mx-auto">
+          <Reviews />
         </div>
       </div>
     )
