@@ -13,13 +13,11 @@ const Footer = () => {
               <img src={footerLogo} alt="logo_id" />
             </h4>
             <ul>
-              <li><a href="/" className="text-black text-lg font-medium">Acerca de nosotros</a></li>
-              <li><a href="/" className="text-black text-lg font-medium">Nuestros servicios</a></li>
-              <li><a href="/" className="text-black text-lg font-medium">Política de privacidad</a></li>
-              <li><a href="/" className="text-black text-lg font-medium">Términos y condiciones</a></li>
+              <li><a href="/" className="text-black text-lg font-medium">Carrera 67 # 48 - 41. Medellin, Colombia</a></li>
+              <li><a href="/" className="text-black text-lg font-medium">(604)4445616</a></li>
+              <li><a href="/" className="text-black text-lg font-medium">+57 315 9266621</a></li>
+              <li><a href="/" className="text-black text-lg font-medium">info@idtsas.com</a></li>
             </ul>
-          </div>
-          <div className="footer-col">
             <div className="social-links flex space-x-4">
               <a href="/"><img src="" alt="instagram_icon" /></a>
               <a href="/"><img src="" alt="linkedin_icon" /></a>
