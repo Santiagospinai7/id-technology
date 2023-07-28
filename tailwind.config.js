@@ -52,6 +52,9 @@ export default {
       screens: {
         'md': '900px',
       },
+      backgroundImage: {
+        'footerImg': "url('/src/assets/img/Footer.png')",
+      }
     },
   },
 

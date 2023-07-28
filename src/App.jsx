@@ -6,6 +6,7 @@ import Slider from './components/home/Slider'
 import ChooseUs from './components/home/ChooseUs'
 import Services from './components/home/Services'
 import Reviews from './components/home/Reviews.jsx'
+import Footer from './components/home/Footer'
 
 function App() {
   let content
@@ -42,6 +43,9 @@ function App() {
         </div>
         <div className="max-w-screen-xl mx-auto">
           <Reviews />
+        </div>
+        <div className="w-full"> 
+          <Footer />
         </div>
       </div>
     )
