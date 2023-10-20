@@ -16,7 +16,7 @@ const ChooseUs = () => {
       </h2>
       <p className='mb-10'>Aqui te damos 3 razones que <strong className='underline'>nos hace especiales</strong> como aliados en tecnología:</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-10 gap-10 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-10 gap-8 mb-20">
         {/* First Column */}
         <div className='flex flex-col md:col-span-7'>
           {/* First Row */}
@@ -37,7 +37,7 @@ const ChooseUs = () => {
             </div>
           </div>
 
-          <div className='my-3'></div>
+          <div className='my-4'></div>
 
           {/* Second Row */}
           <div className='flex h-full md:items-end md:ml-10'>
@@ -59,18 +59,18 @@ const ChooseUs = () => {
         </div>
 
         {/* Second Column */}
-        <div className='bg-red-100 col-span-full md:col-span-3'>
-          {/* Top Container */}
-          <div className='bg-blue-300 w-full md:w-auto mb-4 md:mb-0'>
+        <div className='col-span-full md:col-span-3 flex md:flex-col flex-row'>
+          {/* Image Container */}
+          <div className='md:w-2/4 md:h-48'>
             <div className="flex justify-center items-center h-full">
-              <img src={chooseUs2} alt="Ecogernos 1" className="max-h-20" />
+              <div className="bg-cover bg-center w-full h-full" style={{ backgroundImage: `url(${chooseUs2})` }}></div>
             </div>
           </div>
-          {/* Bottom Container */}
-          <div className='bg-blue-400 flex flex-col justify-center w-full p-5'>
-            <strong className='text-lg text-green-200 mb-4 text-center'>No te dejamos solo.</strong>
-            <p className='text-sm mb-4 text-center'><strong>Una vez decides aliarte con nosotros, cuentas con acompañamiento permanente</strong>, y lo mejor... estamos constantemente atentos a las oportunidades de mejora que surjan en tu empresa. Así que tú tranquilo, nosotros nos encargamos del desarrollo tecnológico de tu compañía.</p>
-            <button className='bg-green-200 text-white px-3 py-2 rounded-3xl mt-4 text-sm'>AGENDA UNA LLAMADA</button>
+          {/* Text Container */}
+          <div className='bg-[#e4e4e4] md:w-full p-5'>
+            <strong className='text-lg text-green-200 mb-4 text-left md:text-center'>No te dejamos solo.</strong>
+            <p className='text-sm mb-4 text-left md:text-center'><strong>Una vez decides aliarte con nosotros, cuentas con acompañamiento permanente</strong>, y lo mejor... estamos constantemente atentos a las oportunidades de mejora que surjan en tu empresa. Así que tú tranquilo, nosotros nos encargamos del desarrollo tecnológico de tu compañía.</p>
+            <button className='bg-green-200 text-white px-3 py-2 rounded-3xl mx-auto text-sm block'>AGENDA UNA LLAMADA</button>
           </div>
         </div>
       </div>
