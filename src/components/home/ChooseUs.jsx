@@ -78,28 +78,28 @@ const ChooseUs = () => {
       <h2 className='text-2xl font-bold mb-3' >Somos partner de los grandes lideres en el sector tecnológico</h2>
       <p className='mb-10'>Lo que nos permite ofrecerte soluciones y de alta calidad a precios competitivos</p>
 
-      <div className="grid grid-cols-3 gap-5">
-        <div className="bg-blue-100">
-          <div className='bg-blue-200'>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div >
+          <div className="flex justify-center items-center h-32">
             <img src={microsoftLogo} alt="Microsoft_logo" />
           </div>
-          <div className='bg-blue-300'>
+          <div className='text-center py-4'>
             <p><strong>Partner certificado de Microsoft</strong></p>
           </div>
         </div>
-        <div className="bg-blue-100">
-          <div className='bg-blue-200'>
+        <div >
+          <div className="flex justify-center items-center h-32">
             <img src={esetLogo} alt="Eset_logo" />
           </div>
-          <div className='bg-blue-300'>
+          <div className='text-center py-4'>
             <p><strong>Partner certificado de ESET</strong></p>
           </div>
         </div>
-        <div className="bg-blue-100">
-          <div className='bg-blue-200'>
+        <div >
+          <div className="flex justify-center items-center h-32">
             <img src={anydekLogo} alt="Anydesk_logo" />
           </div>
-          <div className='bg-blue-300'>
+          <div className='text-center py-4'>
             <p><strong>Partner certificado de AnyDeskx</strong></p>
           </div>
         </div>
