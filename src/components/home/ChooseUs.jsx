@@ -100,7 +100,7 @@ const ChooseUs = () => {
             <img src={anydekLogo} alt="Anydesk_logo" />
           </div>
           <div className='text-center py-4'>
-            <p><strong>Partner certificado de AnyDeskx</strong></p>
+            <p><strong>Partner certificado de AnyDesk</strong></p>
           </div>
         </div>
       </div>
