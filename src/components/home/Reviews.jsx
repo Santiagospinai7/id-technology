@@ -12,14 +12,28 @@ const Reviews = () => {
 
   const [currentPage, setCurrentPage] = useState(0);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const totalPages = Math.ceil(Object.keys(feedbacks).length);
+  const totalPages2 = Math.ceil(Object.keys(feedbacks).length / 2);
+
+  console.log('totalPages', totalPages)
 
   const handleNext = () => {
-    setCurrentPage((prevPage) => (prevPage + 1) % Math.ceil(Object.keys(feedbacks).length / 2));
+    setCurrentPage((prevPage) => (prevPage + 1) % totalPages);
   };
 
   const handlePrev = () => {
     setCurrentPage(
-      (prevPage) => (prevPage - 1 + Math.ceil(Object.keys(feedbacks).length / 2)) % Math.ceil(Object.keys(feedbacks).length / 2)
+      (prevPage) => (prevPage - 1 + totalPages) % totalPages
+    );
+  };
+
+  const handleNext2 = () => {
+    setCurrentPage((prevPage) => (prevPage + 1) % totalPages2);
+  };
+
+  const handlePrev2 = () => {
+    setCurrentPage(
+      (prevPage) => (prevPage - 1 + totalPages) % totalPages2
     );
   };
 
@@ -61,7 +75,7 @@ const Reviews = () => {
 
       {windowWidth >= 900 && (
         <div className="flex items-center justify-between py-14 space-x-4 mx-10"> 
-          <button onClick={handlePrev}>
+          <button onClick={handlePrev2}>
             <img
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="
               style={{ transform: 'rotate(180deg)' }}
@@ -76,7 +90,7 @@ const Reviews = () => {
               </div>
             ))}
           </div>
-          <button onClick={handleNext}><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="/></button>
+          <button onClick={handleNext2}><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="/></button>
         </div>
       )}
     </div>
