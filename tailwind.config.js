@@ -50,8 +50,11 @@ export default {
         green: colors.green,
       },
       screens: {
-        'md': '900px',
+        'md': '1100px',
       },
+      backgroundImage: {
+        'footerImg': "url('/src/assets/img/Footer.png')",
+      }
     },
   },
 

@@ -9,7 +9,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 my-2 w-full">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 w-full mt-2">
       <div className="flex flex-col justify-between mx-auto p-4 md:flex-row">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -53,11 +53,11 @@ const NavBar = () => {
           } w-full md:flex md:items-center md:w-auto mt-4 md:mt-0`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col md:flex-row md:space-x-8">
+          <ul className="text-sm font-medium flex flex-col md:flex-row md:space-x-8">
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-white bg-green-200 rounded md:bg-transparent md:text-green-100 md:p-0 dark:text-white md:dark:text-blue-500"
+                className="block py-2 pl-3 pr-4 text-white bg-green-200 rounded md:bg-transparent md:text-green-100 dark:text-white md:dark:text-blue-500"
                 aria-current="page"
               >
                 SOBRE NOSOTROS
@@ -66,7 +66,7 @@ const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-green-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-100 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-green-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-100 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 SERVICIOS
               </a>
@@ -74,7 +74,7 @@ const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-green-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-100 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-green-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-100 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 CONTACTO
               </a>
@@ -82,9 +82,9 @@ const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-green-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-100 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-green-300 rounded md:rounded-full md:text-white hover:bg-gray-200 md:hover:bg-green-300 md:border-0 md:bg-green-200 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                AGENDA LLAMADA
+                AGENDA UNA LLAMADA
               </a>
             </li>
           </ul>
