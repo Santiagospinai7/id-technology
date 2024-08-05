@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/img/Logo_menu.png';
 
 const NavBar = () => {
@@ -55,37 +56,52 @@ const NavBar = () => {
         >
           <ul className="text-sm font-medium flex flex-col md:flex-row md:space-x-8">
             <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-white bg-green-200 rounded md:bg-transparent md:text-green-100 dark:text-white md:dark:text-blue-500"
-                aria-current="page"
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? 'block py-2 pl-3 pr-4 text-white bg-green-200 rounded md:bg-transparent md:text-green-100 dark:text-white md:dark:text-blue-500'
+                    : 'block py-2 pl-3 pr-4 text-green-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-100 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                }
               >
                 SOBRE NOSOTROS
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-green-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-100 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  isActive
+                    ? 'block py-2 pl-3 pr-4 text-white bg-green-200 rounded md:bg-transparent md:text-green-100 dark:text-white md:dark:text-blue-500'
+                    : 'block py-2 pl-3 pr-4 text-green-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-100 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                }
               >
                 SERVICIOS
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-green-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-100 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? 'block py-2 pl-3 pr-4 text-white bg-green-200 rounded md:bg-transparent md:text-green-100 dark:text-white md:dark:text-blue-500'
+                    : 'block py-2 pl-3 pr-4 text-green-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-100 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                }
               >
                 CONTACTO
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-green-300 rounded md:rounded-full md:text-white hover:bg-gray-200 md:hover:bg-green-300 md:border-0 md:bg-green-200 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              <NavLink
+                to="/schedule"
+                className={({ isActive }) =>
+                  isActive
+                    ? 'block py-2 pl-3 pr-4 text-white bg-green-200 rounded md:rounded-full md:text-white hover:bg-gray-200 md:hover:bg-green-300 md:border-0 md:bg-green-200 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                    : 'block py-2 pl-3 pr-4 text-green-300 rounded md:rounded-full md:text-white hover:bg-gray-200 md:hover:bg-green-300 md:border-0 md:bg-green-200 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                }
               >
                 AGENDA UNA LLAMADA
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
