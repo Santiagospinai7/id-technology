@@ -1,12 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import NavBar from './components/NavBar'
-import Banner from './components/home/Banner'
-import Slider from './components/home/Slider'
-import ChooseUs from './components/home/ChooseUs'
-import Services from './components/home/Services'
-import Reviews from './components/home/Reviews.jsx'
-import Footer from './components/home/Footer'
+import { Routes, Route, Navigate } from 'react-router-dom'
+import Home from './pages/Home'
+import Services from './pages/Services'
+import Layout from './components/Layout'
+
 
 function App() {
   let content
@@ -24,28 +22,16 @@ function App() {
 
   if (isSuccess) {
     content = (
-      // in base of the code below I need to create a first  div that set a margin left-right 10% width screen and then inside another dive that center al the things inside but in base of the limitation of the parent div
-      <div className="min-w-[390px] mx-auto">
-        <div className="max-w-screen-xl mx-auto">
-          <NavBar />
-          <Banner />
-        </div>
-        <div className="w-full"> 
-          <Slider />
-        </div>
-        <div className="max-w-screen-xl mx-auto">
-          <ChooseUs />
-        </div>
-        <div className="w-full bg-gray-100"> 
-          <div className="max-w-screen-xl mx-auto">
-            <Services />
-          </div>
-        </div>
-        <div className="max-w-screen-xl mx-auto">
-          <Reviews />
-        </div>
-        <div className="w-full"> 
-          <Footer />
+      <div style={{ marginLeft: '0%', marginRight: '0%', width: '100%' }}>
+        <div style={{ textAlign: 'center' }}>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="*" element={<Navigate to="/" />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+
+            </Route>
+          </Routes>
         </div>
       </div>
     )

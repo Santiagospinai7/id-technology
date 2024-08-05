@@ -48,10 +48,10 @@ const Reviews = () => {
   }, []);
 
   return (
-    <div className="text-center py-14 mx-10">
-      <h2 className="text-2xl font-bold mb-10">Lo que valoran nuestros clientes de nuestros servicios</h2>
+    <div className="text-center py-14 mx-1  md:mx-10">
+      <h2 className="text-2xl font-bold mb-5">Lo que valoran nuestros clientes de nuestros servicios</h2>
       {windowWidth < 900 && (
-        <div className="flex items-center justify-center py-14 space-x-4 mx-10">
+        <div className="flex items-center justify-center py-14 space-x-4 mx-0">
           <button onClick={handlePrev}>
             <img
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="
@@ -61,7 +61,7 @@ const Reviews = () => {
           </button>
           <div className="flex flex-wrap w-full ">
             {Object.entries(feedbacks).slice(currentPage * 1, currentPage * 1 + 1).map(([key, value], index) => (
-              <div key={index} className="w-2/2 p-4">
+              <div key={index} className="w-2/2 p-1">
                 <p className="p-4 text-green-200 font-bold">"{value}"</p>
                 <p className="text-right p-4 font-bold">- {key}</p>
               </div>
