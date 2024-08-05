@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import software_development from '../../assets/img/Desarollo_Normal.png';
 import distribution from '../../assets/img/Distribucion_Normal.png';
 import business_intelligence from '../../assets/img/Inteligencia_Normal.png';
 import support from '../../assets/img/Soporte_Hoover.png';
+import { useNavigate } from 'react-router-dom';
 
-const ServiceCard = ({ title, description, hoverText, image }) => {
+const ServiceCard = ({ title, description, hoverText, image, url = '/' }) => {
+  const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -14,6 +16,7 @@ const ServiceCard = ({ title, description, hoverText, image }) => {
       } relative p-6 text-center transition duration-300 transform scale-90 hover:scale-100 hover:text-white`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={() => navigate(url)}
     >
       <img src={image} alt={title} className="mx-auto mb-4" />
       <p className="font-bold mb-2">{title}</p>
@@ -40,6 +43,7 @@ const Services = () => {
           description="Diseñamos y desarrollamos programas y aplicaciones para la web y escritorio a la medida de tus necesidades"
           hoverText="Leer más"
           image={software_development}
+          url={'/services/development'}
         />
         <ServiceCard
           title="Soporte Técnico"
