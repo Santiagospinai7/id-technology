@@ -54,6 +54,10 @@ export default {
       },
       backgroundImage: {
         'footerImg': "url('/src/assets/img/Footer.png')",
+        'softwareBanner': "url('/src/assets/Recursos/3_Service_Software/Group 380.png')",
+        'software-bg-2': "url('/src/assets/Recursos/3_Service_Software/Path 844.png')",
+        'technicalSupportBanner': "url('/src/assets/Recursos/4_Service_Soporte/Group 469.png')",
+        'technicalSupport-bg-2': "url('/src/assets/Recursos/4_Service_Soporte/Path 943.png')",
       }
     },
   },

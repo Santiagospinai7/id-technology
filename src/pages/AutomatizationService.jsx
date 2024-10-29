@@ -7,11 +7,11 @@ import cardImage1 from '../assets/Recursos/3_Service_Software/Group 463.png'
 import ServiceDetailBanner from '../components/services/ServiceDetailBanner'
 import ExperienceShowCase from '../components/services/ExperienceShowCase'
 
-const DevelopmentService = () => { 
+const AutomatizationService = () => { 
 
   const serviceData = {
     bannerData: {
-      title: 'Desarrollo de Software',
+      title: 'Automatización de Procesos',
       description: (
         <>
           <p className="mt-4 text-lg">
@@ -97,4 +97,4 @@ const DevelopmentService = () => {
   );
 }
 
-export default DevelopmentService;
+export default AutomatizationService;

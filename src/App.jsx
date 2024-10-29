@@ -4,6 +4,9 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home'
 import Services from './pages/Services'
 import DevelopmentService from './pages/DevelopmentService' 
+import HwDistributionService from './pages/HwDistributionService'
+import TechnicalSupportService from './pages/TechnicalSupportService'
+import AutomatizationService from './pages/AutomatizationService'
 import Layout from './components/Layout'
 
 
@@ -33,7 +36,10 @@ function App() {
               <Route path="*" element={<Navigate to="/" />} />
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/services/:id" element={<DevelopmentService />} />
+              <Route path="/services/development" element={<DevelopmentService />} />
+              <Route path="/services/hardware-software-distribution" element={<HwDistributionService />} />
+              <Route path="/services/support" element={<TechnicalSupportService />} />
+              <Route path="/services/automatizacion-de-procesos" element={<AutomatizationService />} />
             </Route>
           </Routes>
         </div>
