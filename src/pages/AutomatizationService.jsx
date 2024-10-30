@@ -1,8 +1,8 @@
-import mainImage from '../assets/Recursos/3_Service_Software/Group 370.png'
-import cardImage4 from '../assets/Recursos/3_Service_Software/Group 464.png'
-import cardImage2 from '../assets/Recursos/3_Service_Software/Group 375.png'
-import cardImage3 from '../assets/Recursos/3_Service_Software/Group 377.png'
-import cardImage1 from '../assets/Recursos/3_Service_Software/Group 463.png'
+import mainImage from '../assets/Recursos/6_Service_Automatizacion/Group 470.png'
+import cardImage4 from '../assets/Recursos/6_Service_Automatizacion/Group 504.png'
+import cardImage2 from '../assets/Recursos/6_Service_Automatizacion/Group 502.png'
+import cardImage3 from '../assets/Recursos/6_Service_Automatizacion/Group 498.png'
+import cardImage1 from '../assets/Recursos/6_Service_Automatizacion/Group 500.png'
 
 import ServiceDetailBanner from '../components/services/ServiceDetailBanner'
 import ExperienceShowCase from '../components/services/ExperienceShowCase'
@@ -15,52 +15,49 @@ const AutomatizationService = () => {
       description: (
         <>
           <p className="mt-4 text-lg">
-            <strong className='text-green-100'>Con un enfoque centrado en tus necesidades, creamos soluciones tecnológicas a la medida</strong>, ya sea para la web o para escritorio, que se adaptan perfectamente a tus objetivos y procesos, <strong className='text-green-100'>maximizando tu eficiencia y potenciando tu productividad.</strong>
-          </p>
-          <p className="mt-4 text-lg">
-            Te acompañamos en cada etapa del proceso, desde la concepción del proyecto hasta su implementación, asegurando que obtengas un software sólido, confiable y de fácil uso.
+          En ID Technology, automatizamos procesos operativos para que tu equipo se enfoque en lo esencial. Aprovechamos tus herramientas actuales, como Microsoft 365, para <strong className='text-green-100'>reducir tareas repetitivas y agilizar el flujo de trabajo, creando un entorno más productivo y eficiente.</strong> Con nuestra experiencia, transformamos procesos e identificamos mejoras que convierten datos en información que te apoyan para tomar decisiones estratégicas, rápidas y efectivas.
           </p>
         </>
       ),
       image: mainImage,
-      buttonTitle: 'COTIZA TU PROYECTO'
+      buttonTitle: 'Agenda una llamada'
     },
     ExperienceShowCaseData: {
-      title: 'Impulsa tu éxito con nosotros',
-      description: 'Descubre por qué elegirnos como tu aliado tecnológico',
+      title: 'AUTOMATIZA para ganar TIEMPO y maximizar EFICIENCIA en tu empresa',
+      description: 'Aquí te contamos por qué confiar en nuestra experiencia',
       cardData: [
         {
-          title: 'Empresas únicas merecen soluciones a la medida.',
+          title: 'Nos tomamos el tiempo de entender tus procesos.',
           description: (
             <>
-              Por medio de un diálogo constante, <span className="font-bold">identificamos oportunidades y desarrollamos aplicativos que hacen de tu día a día, uno más ameno y eficiente.</span> Es ya que te queremos ver crecer, en base a tu realidad.
+              Nos sumergimos en el día a día de tu operación para comprender tus procesos en profundidad. Así, <span className="font-bold">logramos conocer sus necesidades reales y brindar soluciones precisas.</span>
             </>
           ),
           image: cardImage1
         },
         {
-          title: 'Nunca paramos de aprender.',
+          title: 'Identificamos oportunidades de mejora.',
           description: (
             <>
-              En ID Technology somos conscientes de la alta velocidad en que la tecnología evoluciona, es por esto que nos <span className="font-bold">mantenemos constantemente actualizados y te permite disfrutar de lo último en el mercado.</span>
+              No solo respondemos a tus necesidades actuales, sino que también detectamos oportunidades de optimización en el camino, <span className="font-bold">ayudándote a lograr procesos más eficientes y productivos.</span>
             </>
           ),
           image: cardImage2
         },
         {
-          title: 'Somos la suma de experiencia y conocimiento.',
+          title: 'Aprovechamos las herramientas que ya tienes.',
           description: (
             <>
-              Con 20 años en el mercado, nos hemos encargado de recolectar los mejores aprendizajes y prácticas de desarrollo.<span className="font-bold"> Confía en nuestro legado y descubre cómo podemos transformar tus ideas en resultados tangibles y exitosos.</span>
+              Trabajamos con la tecnología que ya usas en tu empresa, como Microsoft 365, <span className="font-bold">integrando soluciones automatizadas sin necesidad de adquirir nuevas plataformas.</span>
             </>
           ),
           image: cardImage3
         },
         {
-          title: 'Desarrollo de software es solo el comienzo.',
+          title: 'Transformamos datos para apoyar decisiones inteligentes.',
           description: (
             <>
-              <span className="font-bold">Sabemos que el funcionamiento de tu empresa necesita de soluciones integrales.</span> ¿Buscas adquirir el hardware adecuado para potenciar tus soluciones? ¿Requieres soporte técnico confiable y oportuno? Tú confía, que nosotros te apoyamos.
+              Los datos que se generan a través de la automatización se pueden organizar de tal manera que se conviertan en <span className="font-bold">información que respalde la toma de decisiones tácticas y estratégicas.</span>
             </>
           ),
           image: cardImage4
