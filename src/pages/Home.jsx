@@ -23,9 +23,9 @@ const Home = () => {
             <Services />
           </div>
         </div>
-        <div className="max-w-screen-xl mx-auto">
+        {/* <div className="max-w-screen-xl mx-auto">
           <Reviews />
-        </div>
+        </div> */}
       </div>
     </>
   );

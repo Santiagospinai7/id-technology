@@ -51,46 +51,46 @@ const Reviews = () => {
     <div className="text-center py-14 mx-1  md:mx-10">
       <h2 className="text-2xl font-bold mb-5">Lo que valoran nuestros clientes de nuestros servicios</h2>
       {windowWidth < 900 && (
-        <div className="flex items-center justify-center py-14 space-x-4 mx-0">
-          <button onClick={handlePrev}>
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="
-              style={{ transform: 'rotate(180deg)' }}
-              alt="Backward Arrow"
-            />
-          </button>
-          <div className="flex flex-wrap w-full ">
-            {Object.entries(feedbacks).slice(currentPage * 1, currentPage * 1 + 1).map(([key, value], index) => (
-              <div key={index} className="w-2/2 p-1">
-                <p className="p-4 text-green-200 font-bold">"{value}"</p>
-                <p className="text-right p-4 font-bold">- {key}</p>
-              </div>
-            ))}
-          </div>
-          <button onClick={handleNext}><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="/></button>
+  <div className="flex items-center justify-center py-14 space-x-4 mx-0">
+    <button onClick={handlePrev}>
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="
+        style={{ transform: 'rotate(180deg)' }}
+        alt="Backward Arrow"
+      />
+    </button>
+    <div className="flex flex-wrap w-full ">
+      {Object.entries(feedbacks).slice(currentPage * 1, currentPage * 1 + 1).map(([key, value], index) => (
+        <div key={index} className="w-2/2 p-1 min-h-[150px]"> {/* Added min-h for consistent height */}
+          <p className="p-4 text-green-200 font-bold">"{value}"</p>
+          <p className="text-right p-4 font-bold">- {key}</p>
         </div>
-      )}
+      ))}
+    </div>
+    <button onClick={handleNext}><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="/></button>
+  </div>
+)}
 
-      {windowWidth >= 900 && (
-        <div className="flex items-center justify-between py-14 space-x-4 mx-10"> 
-          <button onClick={handlePrev2}>
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="
-              style={{ transform: 'rotate(180deg)' }}
-              alt="Backward Arrow"
-            />
-          </button>
-          <div className="flex flex-wrap w-full "> 
-            {Object.entries(feedbacks).slice(currentPage * 2, currentPage * 2 + 2).map(([key, value], index) => (
-              <div key={index} className="w-1/2 p-4"> 
-                <p className="p-4 text-green-200 font-bold">"{value}"</p>
-                <p className="text-right p-4 font-bold">- {key}</p>
-              </div>
-            ))}
-          </div>
-          <button onClick={handleNext2}><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="/></button>
+{windowWidth >= 900 && (
+  <div className="flex items-center justify-between py-14 space-x-4 mx-10"> 
+    <button onClick={handlePrev2}>
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="
+        style={{ transform: 'rotate(180deg)' }}
+        alt="Backward Arrow"
+      />
+    </button>
+    <div className="flex flex-wrap w-full "> 
+      {Object.entries(feedbacks).slice(currentPage * 2, currentPage * 2 + 2).map(([key, value], index) => (
+        <div key={index} className="w-1/2 p-4 min-h-[150px]"> {/* Added min-h for consistent height */}
+          <p className="p-4 text-green-200 font-bold">"{value}"</p>
+          <p className="text-right p-4 font-bold">- {key}</p>
         </div>
-      )}
+      ))}
+    </div>
+    <button onClick={handleNext2}><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjklEQVR4nO3asQ3CQBAF0WliLdN/JyRImAgCygEhXUSO9HeZ18HXOPDpDiT9yhm4ARvNXYEX8Og+poD7GvMETjRWjglVlglVlglVlgllmVSWSWWZVJZJNarMto7LnzEHjY0YUl+f1k5DjkhhiRSWSGGJFJZIYYkUlkhR/oqHqAklWMfSEdfTlykPBqR/8Abo/nQfGMTYTAAAAABJRU5ErkJggg=="/></button>
+  </div>
+)}
     </div>
   );
 }
