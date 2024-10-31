@@ -147,16 +147,14 @@ const NavBar = () => {
               </div>
             </li>
             <li className="text-center w-full md:w-auto md:text-left">
-              <NavLink
-                to="/schedule"
-                className={({ isActive }) =>
-                  isActive
-                    ? 'block py-2 pl-3 pr-4 text-white bg-green-200 rounded md:rounded-full md:text-white hover:bg-gray-200 md:hover:bg-green-300 md:border-0 md:bg-green-200 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
-                    : 'block py-2 pl-3 pr-4 text-green-300 rounded md:rounded-full md:text-white hover:bg-gray-200 md:hover:bg-green-300 md:border-0 md:bg-green-200 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
-                }
-              >
-                AGENDA UNA LLAMADA
-              </NavLink>
+            <a
+              href="https://wa.me/+573159266621?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block py-2 pl-3 pr-4 text-green-300 rounded md:rounded-full md:text-white hover:bg-gray-200 md:hover:bg-green-300 md:border-0 md:bg-green-200 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            >
+              AGENDA UNA LLAMADA
+            </a>
             </li>
           </ul>
         </div>

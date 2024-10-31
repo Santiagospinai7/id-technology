@@ -8,7 +8,9 @@ const ServiceDetailBanner = ({ title, description, image, buttonTitle }) => {
       <div className="max-w-3xl mx-auto px-4 text-center">
         {description}
       </div>
-      <button className='bg-green-200 hover:bg-green-300 text-white mt-8 px-10 py-2 rounded-3xl text-sm'>{buttonTitle.toUpperCase()}</button>
+      <button 
+      onClick={() => window.open('https://wa.me/+573159266621?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios')}
+      className='bg-green-200 hover:bg-green-300 text-white mt-8 px-10 py-2 rounded-3xl text-sm'>{buttonTitle.toUpperCase()}</button>
     </div>
   );
 }
