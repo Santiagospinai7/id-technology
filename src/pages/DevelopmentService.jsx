@@ -1,8 +1,8 @@
-import mainImage from '../assets/Recursos/3_Service_Software/Group 370.png'
-import cardImage4 from '../assets/Recursos/3_Service_Software/Group 464.png'
-import cardImage2 from '../assets/Recursos/3_Service_Software/Group 375.png'
-import cardImage3 from '../assets/Recursos/3_Service_Software/Group 377.png'
-import cardImage1 from '../assets/Recursos/3_Service_Software/Group 463.png'
+import mainImage from '../assets/Recursos/3_Service_Software/Group_370.png'
+import cardImage4 from '../assets/Recursos/3_Service_Software/Group_464.png'
+import cardImage2 from '../assets/Recursos/3_Service_Software/Group_375.png'
+import cardImage3 from '../assets/Recursos/3_Service_Software/Group_377.png'
+import cardImage1 from '../assets/Recursos/3_Service_Software/Group_463.png'
 
 import ServiceDetailBanner from '../components/services/ServiceDetailBanner'
 import ExperienceShowCase from '../components/services/ExperienceShowCase'

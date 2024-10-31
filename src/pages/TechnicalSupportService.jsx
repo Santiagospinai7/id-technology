@@ -1,14 +1,14 @@
-import bannerImage from '../assets/Recursos/4_Service_Soporte/Group 456.png'
-import cardImage1 from '../assets/Recursos/4_Service_Soporte/Group 467.png'
-import cardImage2 from '../assets/Recursos/4_Service_Soporte/Group 460.png'
-import cardImage3 from '../assets/Recursos/4_Service_Soporte/Group 468.png'
-import cardImage4 from '../assets/Recursos/4_Service_Soporte/Group 466.png'
+import ServiceDetailBanner from "../components/services/ServiceDetailBanner";
+import ExperienceShowCase from "../components/services/ExperienceShowCase";
 
-import ServiceDetailBanner from "../components/services/ServiceDetailBanner"
-import ExperienceShowCase from "../components/services/ExperienceShowCase"
+// Usa `new URL` para asegurar rutas correctas en producción
+const bannerImage = new URL('../assets/Recursos/4_Service_Soporte/Group_456.png', import.meta.url).href;
+const cardImage1 = new URL('../assets/Recursos/4_Service_Soporte/Group_467.png', import.meta.url).href;
+const cardImage2 = new URL('../assets/Recursos/4_Service_Soporte/Group_460.png', import.meta.url).href;
+const cardImage3 = new URL('../assets/Recursos/4_Service_Soporte/Group_468.png', import.meta.url).href;
+const cardImage4 = new URL('../assets/Recursos/4_Service_Soporte/Group_466.png', import.meta.url).href;
 
 const TechnicalSupportService = () => {
-  
   const serviceData = {
     bannerData: {
       title: 'Soporte Técnico',
@@ -62,9 +62,8 @@ const TechnicalSupportService = () => {
         }
       ]
     }
-  }
+  };
 
-  
   return (
     <div className="relative bg-white">
       <div className="bg-technicalSupportBanner bg-no-repeat bg-contain bg-top w-full">
@@ -91,6 +90,6 @@ const TechnicalSupportService = () => {
       </div>
     </div>
   );
-}
+};
 
 export default TechnicalSupportService;
