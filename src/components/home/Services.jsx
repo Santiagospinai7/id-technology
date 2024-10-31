@@ -15,28 +15,27 @@ const Services = () => {
           description="Diseñamos y desarrollamos programas y aplicaciones para la web y escritorio a la medida de tus necesidades"
           // hoverText="Leer más"
           image={software_development}
-          url={'/services/development'}
+          url={'/servicios/desarrollo-de-software'}
         />
         <ServiceCard
           title="Soporte Técnico"
           description="Asesoramos y/o gestionamos todos o parte de tus procesos informáticos"
           // hoverText="Leer más"
           image={support}
-          url={'/services/support'}
+          url={'/servicios/soporte-tecnico'}
         />
         <ServiceCard
           title="Distribución de hardware y software"
           description="Proveemos e instalamos componentes tecnológicos y esenciales para el desarrollo de tus tareas diarias."
           // hoverText="Leer más"
           image={distribution}
-          url={'/services/hardware-software-distribution'}
+          url={'/servicios/distribucion-de-hardware-y-software'}
         />
         <ServiceCard
           title="Automatización de procesos"
           description="Automatizamos tareas operativas usando la Office de microsoft 365 para optimizar el flujo de trabajo y facilitar decisiones estratégicas."
           // hoverText="Leer más"
           image={business_intelligence}
-          url={'/services/automatizacion-de-procesos'}
         />
       </div>
     </div>

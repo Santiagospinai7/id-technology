@@ -10,8 +10,8 @@ const ServiceCard = ({ title, description, hoverText, image, url = '/' }) => {
   return (
     <div
       className={`${
-        isHovered ? 'bg-[#2E995B]' : 'bg-[#80D5A3]'
-      } rounded-lg shadow-lg relative p-6 text-center transition duration-300 transform scale-90 hover:scale-100 hover:text-white`}
+        isHovered ? 'bg-[#70ba8f]' : 'bg-[#80D5A3]'
+      } rounded-lg shadow-lg relative p-6 text-center transition duration-300 transform scale-95 hover:scale-100 hover:text-white cursor-pointer`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={() => navigate(url)}

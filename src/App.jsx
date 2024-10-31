@@ -35,11 +35,11 @@ function App() {
             <Route element={<Layout />}>
               <Route path="*" element={<Navigate to="/" />} />
               <Route path="/" element={<Home />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/services/development" element={<DevelopmentService />} />
-              <Route path="/services/hardware-software-distribution" element={<HwDistributionService />} />
-              <Route path="/services/support" element={<TechnicalSupportService />} />
-              <Route path="/services/automatizacion-de-procesos" element={<AutomatizationService />} />
+              <Route path="/servicios" element={<Services />} />
+              <Route path="/servicios/desarrollo-de-software" element={<DevelopmentService />} />
+              <Route path="/servicios/distribucion-de-hardware-y-software" element={<HwDistributionService />} />
+              <Route path="/servicios/soporte-tecnico" element={<TechnicalSupportService />} />
+              <Route path="/servicios/automatizacion-de-procesos" element={<AutomatizationService />} />
             </Route>
           </Routes>
         </div>

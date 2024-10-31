@@ -8,17 +8,18 @@ const Home = () => {
   return (
     <>
       <div className="min-w-[390px] mx-auto">
-        <div className="max-w-screen-xl mx-auto">
+        <div className="max-w-screen-xl mx-auto ">
           <Banner />
         </div>
-        <div className="w-full"> 
+        <div className="w-full "> 
           <Slider />
         </div>
         <div className="max-w-screen-xl mx-auto">
           <ChooseUs />
         </div>
         <div className="w-full bg-gray-100"> 
-          <div className="max-w-screen-xl mx-auto">
+          {/* section /#servicios */}
+          <div id="servicios" className="max-w-screen-xl mx-auto"> 
             <Services />
           </div>
         </div>

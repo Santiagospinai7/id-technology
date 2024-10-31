@@ -32,7 +32,9 @@ const ChooseUs = () => {
               <strong className='text-lg text-green-200 mb-5 text-left'>No trabajamos a ciegas.</strong>
               <p className='text-sm mb-5 text-left'>Por eso siempre ofrecemos a nuestros clientes <strong>un diagnóstico inicial completamente gratis para identificar sus oportunidades de mejora.</strong> y es que al final cada empresa es un mundo y a nosotros, nos interesa el tuyo.</p>
               <div className="flex items-center"> {/* Added a new flex container */}
-                <button className='bg-green-200 text-white p-2 rounded-3xl text-sm'>AGENDA TU DIAGNOSTICO GRATUITO</button>
+                <button className='bg-green-200 hover:bg-green-200 text-white py-2 px-3 rounded-3xl mt-0 text-sm transition duration-300 transform hover:scale-105 hover:shadow-lg'>
+                  AGENDA TU DIAGNOSTICO GRATUITO
+                </button>
               </div>
             </div>
           </div>
@@ -46,7 +48,9 @@ const ChooseUs = () => {
               <strong className='text-lg text-green-200 mb-4 text-right'>No nos limitamos a entregar cajas.</strong>
               <p className='text-sm mb-4 text-right'>Los dispositivos tecnológicos son herramientas clave las empresas. por eso no solo te acompañamos en el proceso de compra para que elijas el mejor dispositivo de acuerdo a tus necesidades. si no que <strong>te lo instalamos, lo configuramos y te lo dejamos listo para empezar a trabajar.</strong></p>
               <div className="flex justify-end"> {/* Changed to justify-end */}
-                <button className='bg-green-200 text-white p-2 rounded-3xl text-sm'>CONOCE AQUÍ NUESTRO PORTAFOLIO</button>
+                <button className='bg-green-200 hover:bg-green-200 text-white py-2 px-3 rounded-3xl mt-0 text-sm transition duration-300 transform hover:scale-105 hover:shadow-lg'>
+                  CONOCE AQUÍ NUESTRO PORTAFOLIO
+                </button>
               </div>
             </div>
             {/* Right Container */}
@@ -70,7 +74,10 @@ const ChooseUs = () => {
           <div className='bg-[#e4e4e4] md:w-full p-5'>
             <strong className='text-lg text-green-200 mb-4 text-left md:text-center'>No te dejamos solo.</strong>
             <p className='text-sm mb-4 text-left md:text-center'><strong>Una vez decides aliarte con nosotros, cuentas con acompañamiento permanente</strong>, y lo mejor... estamos constantemente atentos a las oportunidades de mejora que surjan en tu empresa. Así que tú tranquilo, nosotros nos encargamos del desarrollo tecnológico de tu compañía.</p>
-            <button className='bg-green-200 text-white px-3 py-2 rounded-3xl mx-auto text-sm block'>AGENDA UNA LLAMADA</button>
+            {/* <button className='bg-green-200 text-white px-3 py-2 rounded-3xl mx-auto text-sm block'></button> */}
+            <button className='bg-green-200 hover:bg-green-200 text-white py-2 px-3 rounded-3xl mt-0 text-sm transition duration-300 transform hover:scale-105 hover:shadow-lg'>
+            AGENDA UNA LLAMADA
+            </button>
           </div>
         </div>
       </div>
