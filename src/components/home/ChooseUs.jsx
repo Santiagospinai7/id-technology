@@ -10,7 +10,7 @@ import anydekLogo from '../../assets/img/Partner_Anydesk.png'
 const ChooseUs = () => {
   let content = (
     <StyledChooseUs className='my-28 text-center'>
-      <h3 className='text-2xl font-bold mb-3'>¿Tu empresa esta bien ahora?</h3>
+      <h3 className='text-2xl font-bold mb-3'>¿Tu empresa está bien ahora?</h3>
       <h2 className='text-2xl font-bold mb-5'>
         <span className='bg-zinc-800 text-white px-2 py-1'>¡Pues te contamos que puedes estar mucho mejor!</span>
       </h2>
@@ -30,7 +30,7 @@ const ChooseUs = () => {
             {/* Right Container */}
             <div className='bg-[#e4e4e4] flex flex-col justify-center w-3/4 p-5'>
               <strong className='text-lg text-green-200 mb-5 text-left'>No trabajamos a ciegas.</strong>
-              <p className='text-sm mb-5 text-left'>Por eso siempre ofrecemos a nuestros clientes <strong>un diagnóstico inicial completamente gratis para identificar sus oportunidades de mejora.</strong> y es que al final cada empresa es un mundo y a nosotros, nos interesa el tuyo.</p>
+              <p className='text-sm mb-5 text-left'>Por eso siempre ofrecemos a nuestros clientes <strong>un diagnóstico inicial completamente gratis para identificar sus oportunidades de mejora.</strong> Y es que al final cada empresa es un mundo y a nosotros, nos interesa el tuyo.</p>
               <div className="flex items-center"> {/* Added a new flex container */}
                 <button 
                 onClick={() => window.open('https://wa.me/+573159266621?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios')}
@@ -48,7 +48,7 @@ const ChooseUs = () => {
             {/* Left Container */}
             <div className='bg-[#e4e4e4] flex flex-col justify-center w-3/4 p-5'>
               <strong className='text-lg text-green-200 mb-4 text-right'>No nos limitamos a entregar cajas.</strong>
-              <p className='text-sm mb-4 text-right'>Los dispositivos tecnológicos son herramientas clave las empresas. por eso no solo te acompañamos en el proceso de compra para que elijas el mejor dispositivo de acuerdo a tus necesidades. si no que <strong>te lo instalamos, lo configuramos y te lo dejamos listo para empezar a trabajar.</strong></p>
+              <p className='text-sm mb-4 text-right'>Los dispositivos tecnológicos son herramientas clave las empresas. Por eso, no solo te acompañamos en el proceso de compra para que elijas el mejor dispositivo de acuerdo a tus necesidades, sino que <strong>te lo instalamos, lo configuramos y te lo dejamos listo para empezar a trabajar.</strong></p>
               <div className="flex justify-end"> {/* Changed to justify-end */}
                 <button className='bg-green-200 hover:bg-green-200 text-white py-2 px-3 rounded-3xl mt-0 text-sm transition duration-300 transform hover:scale-105 hover:shadow-lg'>
                   CONOCE AQUÍ NUESTRO PORTAFOLIO
@@ -86,8 +86,8 @@ const ChooseUs = () => {
         </div>
       </div>
 
-      <h2 className='text-2xl font-bold mb-3' >Somos partner de los grandes lideres en el sector tecnológico</h2>
-      <p className='mb-10'>Lo que nos permite ofrecerte soluciones y de alta calidad a precios competitivos</p>
+      <h2 className='text-2xl font-bold mb-3' >Somos partner de los grandes líderes en el sector tecnológico</h2>
+      <p className='mb-10'>Lo que nos permite ofrecerte soluciones completas y de alta calidad a precios competitivos</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
         <div >
