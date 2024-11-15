@@ -58,7 +58,10 @@ export default {
         'software-bg-2': "url('/src/assets/Recursos/3_Service_Software/Path_844.png')",
         'technicalSupportBanner': "url('/src/assets/Recursos/4_Service_Soporte/Group_469.png')",
         'technicalSupport-bg-2': "url('/src/assets/Recursos/4_Service_Soporte/Path_943.png')",
-      }
+      },
+      fontFamily: {
+        effra: ['Effra', 'sans-serif'],
+      },
     },
   },
 

@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Effra';
+  src: local('Effra'), url('./fonts/Effra-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply 'Effra' as the default font */
+:root {
+  --font-primary: 'Effra';
+}
+
+html, body {
+  font-family: 'Effra';
+}
