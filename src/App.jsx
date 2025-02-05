@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
-import { Routes, Route, Navigate } from 'react-router-dom'
-import Home from './pages/Home'
-import Services from './pages/Services'
-import DevelopmentService from './pages/DevelopmentService' 
-import HwDistributionService from './pages/HwDistributionService'
-import TechnicalSupportService from './pages/TechnicalSupportService'
-import AutomatizationService from './pages/AutomatizationService'
 import Layout from './components/Layout'
-
+import AutomatizationService from './pages/AutomatizationService'
+import DevelopmentService from './pages/DevelopmentService'
+import Home from './pages/Home'
+import HwDistributionService from './pages/HwDistributionService'
+import Services from './pages/Services'
+import TechnicalSupportService from './pages/TechnicalSupportService'
+import PQRSFForm from './pages/pqrsf'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -40,6 +40,7 @@ function App() {
               <Route path="/servicios/distribucion-de-hardware-y-software" element={<HwDistributionService />} />
               <Route path="/servicios/soporte-tecnico" element={<TechnicalSupportService />} />
               <Route path="/servicios/automatizacion-de-procesos" element={<AutomatizationService />} />
+              <Route path="/pqrsf" element={<PQRSFForm />} />
             </Route>
           </Routes>
         </div>

@@ -12,12 +12,15 @@ const Footer = () => {
             <a href="/">
               <img src={footerLogo} alt="ID Technology Logo" className="w-32 mb-2" />
             </a>
+                <span className="text-black text-sm">
+                  <a href="/pqrsf">PQRSF</a>
+                </span>
             <ul className="space-y-0">
               <li className="flex items-center space-x-3">
                 <span className="text-black text-sm">Carrera 67 # 48 - 41, Medellin, Colombia</span>
               </li>
               <li className="flex items-center space-x-3">
-                <span className="text-black text-sm">(604) 4445616</span>
+                <span className="text-black text-sm">604 5377455</span>
               </li>
               <li className="flex items-center space-x-3">
                 <span className="text-black text-sm">+57 315 9266621</span>
@@ -27,10 +30,10 @@ const Footer = () => {
               </li>
             </ul>
             <div className="flex space-x-4 mt-2">
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/idtechnology.sas" target="_blank" rel="noopener noreferrer">
                 <img src={instagramLogo} alt="Instagram" className="w-8 h-8 hover:opacity-80 transition-opacity duration-300" />
               </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/id-technology-sas" target="_blank" rel="noopener noreferrer">
                 <img src={linkedinLogo} alt="LinkedIn" className="w-8 h-8 hover:opacity-80 transition-opacity duration-300" />
               </a>
             </div>
