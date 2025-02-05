@@ -12,7 +12,7 @@ const Footer = () => {
             <a href="/">
               <img src={footerLogo} alt="ID Technology Logo" className="w-32 mb-2" />
             </a>
-                <span className="text-black text-sm">
+                <span className="text-black text-sm hover:text-green">
                   <a href="/pqrsf">PQRSF</a>
                 </span>
             <ul className="space-y-0">

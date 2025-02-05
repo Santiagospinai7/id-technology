@@ -1,8 +1,8 @@
-import { PaperAirplaneIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
+import emailjs from '@emailjs/browser';
+import { CheckCircleIcon, PaperAirplaneIcon } from '@heroicons/react/24/outline';
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
-import emailjs from '@emailjs/browser';
-import { motion } from 'framer-motion';
 import 'react-toastify/dist/ReactToastify.css';
 
 const PQRSFForm = () => {
