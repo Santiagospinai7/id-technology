@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import logo from '../assets/img/Logo_menu.png';
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isButtonHovered, setIsButtonHovered] = useState(false);
   const location = useLocation(); // Get the current path
 
   const handleServiciosClick = () => {
@@ -21,10 +22,23 @@ const NavBar = () => {
     setIsNavOpen(false); // Close mobile menu if open
   };
 
-
   const handleNavToggle = () => {
     setIsNavOpen(!isNavOpen);
   };
+
+  // Close dropdown when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isDropdownOpen && !event.target.closest('#dropdown-button') && !event.target.closest('#dropdownNavbar')) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isDropdownOpen]);
 
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
@@ -62,6 +76,7 @@ const NavBar = () => {
             </li>
             <li className="relative text-center w-full md:w-auto md:text-left">
               <button
+                id="dropdown-button"
                 onClick={handleServiciosClick}
                 className="flex items-center justify-center md:justify-start w-full md:w-auto py-2 px-3 text-green-300 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-100 dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
               >
@@ -147,14 +162,52 @@ const NavBar = () => {
               </div>
             </li>
             <li className="text-center w-full md:w-auto md:text-left">
-            <a
-              href="https://wa.me/+573159266621?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block py-2 pl-3 pr-4 text-green-300 rounded md:rounded-full md:text-white hover:bg-gray-200 md:hover:bg-green-300 md:border-0 md:bg-green-200 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-            >
-              AGENDA UNA LLAMADA
-            </a>
+              <a
+                href="https://wa.me/+573159266621?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => setIsButtonHovered(true)}
+                onMouseLeave={() => setIsButtonHovered(false)}
+                className={`
+                  block py-2 pl-3 pr-4 
+                  text-green-300 md:text-white
+                  rounded md:rounded-full 
+                  md:bg-green-200
+                  relative overflow-hidden
+                  transition-all duration-300 ease-in-out
+                  ${isButtonHovered ? 'md:shadow-lg md:shadow-green-100/30' : ''}
+                  ${isButtonHovered ? 'md:translate-y-[-2px]' : ''}
+                `}
+              >
+                {/* Visible text */}
+                <span className="relative z-10">AGENDA UNA LLAMADA</span>
+                
+                {/* Animated background for medium screens and up */}
+                <span 
+                  className={`
+                    absolute inset-0 
+                    bg-green-300
+                    transition-transform duration-500 ease-out
+                    rounded-full
+                    hidden md:block
+                  `}
+                  style={{
+                    transform: isButtonHovered ? 'scale(1)' : 'scale(0)',
+                    opacity: isButtonHovered ? '1' : '0',
+                    transformOrigin: 'center'
+                  }}
+                />
+                
+                {/* Mobile hover effect */}
+                <span className={`
+                  absolute inset-0
+                  bg-gray-200
+                  transition-opacity duration-300
+                  rounded
+                  md:hidden
+                  ${isButtonHovered ? 'opacity-100' : 'opacity-0'}
+                `}/>
+              </a>
             </li>
           </ul>
         </div>
