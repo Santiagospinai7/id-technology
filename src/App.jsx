@@ -9,6 +9,7 @@ import HwDistributionService from './pages/HwDistributionService'
 import Services from './pages/Services'
 import TechnicalSupportService from './pages/TechnicalSupportService'
 import PQRSFForm from './pages/pqrsf'
+import ScrollToTop from './utils/scrollUtilis'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -31,6 +32,7 @@ function App() {
     content = (
       <div style={{ marginLeft: '0%', marginRight: '0%', width: '100%' }}>
         <div style={{ textAlign: 'center' }}>
+          <ScrollToTop />
           <Routes>
             <Route element={<Layout />}>
               <Route path="*" element={<Navigate to="/" />} />

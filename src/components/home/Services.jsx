@@ -36,6 +36,7 @@ const Services = () => {
           description="Automatizamos tareas operativas usando la Office de microsoft 365 para optimizar el flujo de trabajo y facilitar decisiones estratégicas."
           // hoverText="Leer más"
           image={business_intelligence}
+          url='/servicios/automatizacion-de-procesos'
         />
       </div>
     </div>
