@@ -24,6 +24,18 @@ const Footer = () => {
               {/* Underline Effect on Hover */}
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
             </span>
+            <span className="relative group">
+              <a 
+                href="/src/assets/Recursos/politica_proteccion_de_datos.pdf" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black text-sm font-semibold group-hover:text-green-600 transition duration-300"
+              >
+                Politica de Tratamiento de Datos Personales
+              </a>
+              {/* Underline Effect on Hover */}
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
+            </span>
 
             <ul className="space-y-0">
               <li className="flex items-center space-x-3">
