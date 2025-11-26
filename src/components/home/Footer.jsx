@@ -1,6 +1,7 @@
 import instagramLogo from "../../assets/img/Instagram.png";
 import linkedinLogo from "../../assets/img/LinkedIn.png";
 import footerLogo from "../../assets/img/Logo_footer.png";
+import politicaPDF from "../../assets/Recursos/politica_proteccion_de_datos.pdf";
 
 const Footer = () => {
   return (
@@ -26,7 +27,7 @@ const Footer = () => {
             </span>
             <span className="relative group">
               <a 
-                href="/src/assets/Recursos/politica_proteccion_de_datos.pdf" 
+                href={politicaPDF}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black text-sm font-semibold group-hover:text-green-600 transition-all duration-300"
