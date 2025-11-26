@@ -1,8 +1,7 @@
 import Banner from "../components/home/Banner";
-import Slider from "../components/home/Slider";
-import Services from "../components/home/Services";
 import ChooseUs from "../components/home/ChooseUs";
-import Reviews from "../components/home/Reviews";
+import Services from "../components/home/Services";
+import Slider from "../components/home/Slider";
 
 const Home = () => {
   return (

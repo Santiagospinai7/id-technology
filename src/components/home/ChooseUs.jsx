@@ -10,11 +10,11 @@ import anydekLogo from '../../assets/img/Partner_Anydesk.png'
 const ChooseUs = () => {
   let content = (
     <StyledChooseUs className='my-28 text-center'>
-      <h3 className='text-2xl font-bold mb-3'>¿Tu empresa está bien ahora?</h3>
-      <h2 className='text-2xl font-bold mb-5'>
-        <span className='bg-zinc-800 text-white px-2 py-1'>¡Pues te contamos que puedes estar mucho mejor!</span>
+      <h3 className='text-2xl font-bold mb-3 animate-fade-in-up'>¿Tu empresa está bien ahora?</h3>
+      <h2 className='text-2xl font-bold mb-5 animate-fade-in-up stagger-1'>
+        <span className='bg-zinc-800 text-white px-2 py-1 inline-block hover:scale-105 transition-transform duration-300'>¡Pues te contamos que puedes estar mucho mejor!</span>
       </h2>
-      <p className='mb-10'>Aqui te damos 3 razones que <strong className='underline'>nos hace especiales</strong> como aliados en tecnología:</p>
+      <p className='mb-10 animate-fade-in-up stagger-2'>Aqui te damos 3 razones que <strong className='underline'>nos hace especiales</strong> como aliados en tecnología:</p>
 
       <div className="grid grid-cols-1 md:grid-cols-10 gap-8 mb-20">
         {/* First Column */}
@@ -34,7 +34,7 @@ const ChooseUs = () => {
               <div className="flex items-center"> {/* Added a new flex container */}
                 <button 
                 onClick={() => window.open('https://wa.me/+573159266621?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios')}
-                className='bg-green-200 hover:bg-green-200 text-white py-2 px-3 rounded-3xl mt-0 text-sm transition duration-300 transform hover:scale-105 hover:shadow-lg'>
+                className='bg-green-200 hover:bg-green-300 text-white py-2 px-3 rounded-3xl mt-0 text-sm transition-all duration-300 transform hover:scale-110 hover:shadow-2xl active:scale-95 btn-ripple'>
                   AGENDA TU DIAGNOSTICO GRATUITO
                 </button>
               </div>

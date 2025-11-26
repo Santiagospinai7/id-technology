@@ -102,57 +102,57 @@ const NavBar = () => {
               <div
                 id="dropdownNavbar"
                 className={`${
-                  isDropdownOpen ? '' : 'hidden'
-                } absolute left-1/2 transform -translate-x-1/2 mt-2 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600`}
+                  isDropdownOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
+                } absolute left-1/2 transform -translate-x-1/2 mt-2 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-xl w-44 dark:bg-gray-700 dark:divide-gray-600 transition-all duration-300 ease-out`}
               >
                 <ul className="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                  <li>
+                  <li className="transform transition-all duration-200 hover:translate-x-1">
                     <NavLink
                       to="/servicios/desarrollo-de-software"
                       onClick={() => setIsDropdownOpen(false)}
                       className={({ isActive }) =>
                         isActive
-                          ? 'block px-4 py-2 text-green-100 bg-gray-100 dark:bg-gray-600 dark:text-white'
-                          : 'block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                          ? 'block px-4 py-2 text-green-100 bg-gray-100 dark:bg-gray-600 dark:text-white transition-colors duration-200'
+                          : 'block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white transition-all duration-200'
                       }
                     >
                       Desarrollo de Software
                     </NavLink>
                   </li>
-                  <li>
+                  <li className="transform transition-all duration-200 hover:translate-x-1">
                     <NavLink
                       to="/servicios/soporte-tecnico"
                       onClick={() => setIsDropdownOpen(false)}
                       className={({ isActive }) =>
                         isActive
-                          ? 'block px-4 py-2 text-green-100 bg-gray-100 dark:bg-gray-600 dark:text-white'
-                          : 'block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                          ? 'block px-4 py-2 text-green-100 bg-gray-100 dark:bg-gray-600 dark:text-white transition-colors duration-200'
+                          : 'block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white transition-all duration-200'
                       }
                     >
                       Soporte Técnico
                     </NavLink>
                   </li>
-                  <li>
+                  <li className="transform transition-all duration-200 hover:translate-x-1">
                     <NavLink
                       to="/servicios/distribucion-de-hardware-y-software"
                       onClick={() => setIsDropdownOpen(false)}
                       className={({ isActive }) =>
                         isActive
-                          ? 'block px-4 py-2 text-green-100 bg-gray-100 dark:bg-gray-600 dark:text-white'
-                          : 'block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                          ? 'block px-4 py-2 text-green-100 bg-gray-100 dark:bg-gray-600 dark:text-white transition-colors duration-200'
+                          : 'block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white transition-all duration-200'
                       }
                     >
                       Distribución de Hardware y Software
                     </NavLink>
                   </li>
-                  <li>
+                  <li className="transform transition-all duration-200 hover:translate-x-1">
                     <NavLink
                       to="/servicios/automatizacion-de-procesos"
                       onClick={() => setIsDropdownOpen(false)}
                       className={({ isActive }) =>
                         isActive
-                          ? 'block px-4 py-2 text-green-100 bg-gray-100 dark:bg-gray-600 dark:text-white'
-                          : 'block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                          ? 'block px-4 py-2 text-green-100 bg-gray-100 dark:bg-gray-600 dark:text-white transition-colors duration-200'
+                          : 'block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white transition-all duration-200'
                       }
                     >
                       Automatización de Procesos

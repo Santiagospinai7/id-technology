@@ -25,12 +25,19 @@ function App() {
   let content
 
   if (isLoading) {
-    content = <div>Loading...</div>
+    content = (
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-green-50 to-white">
+        <div className="text-center">
+          <div className="inline-block animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-green-200 mb-4"></div>
+          <p className="text-green-300 text-lg font-semibold animate-pulse">Cargando...</p>
+        </div>
+      </div>
+    )
   }
 
   if (isSuccess) {
     content = (
-      <div style={{ marginLeft: '0%', marginRight: '0%', width: '100%' }}>
+      <div style={{ marginLeft: '0%', marginRight: '0%', width: '100%' }} className="animate-fade-in">
         <div style={{ textAlign: 'center' }}>
           <ScrollToTop />
           <Routes>
